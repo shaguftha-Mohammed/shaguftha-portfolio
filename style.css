@@ -371,7 +371,7 @@ p {
 
 /* Smaller screens */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #contact .contact-form {
         max-width: 100%;
     }
@@ -387,7 +387,7 @@ p {
    8. MOBILE RESPONSIVENESS
 ========================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     .navbar {
         align-items: flex-start;
@@ -633,6 +633,63 @@ html {
         visibility: hidden;
     }
 }
+
+
+/* MOBILE LAYOUT FIX */
+@media (max-width: 600px) {
+
+    /* Keep the About section in the normal page flow */
+    #about.section {
+        top: 0;
+        left: 0;
+        margin-top: 25px;
+        padding: 45px 6%;
+    }
+
+    #about h2 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        overflow-wrap: break-word;
+    }
+
+    #about p {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    /* Keep the portrait within the mobile screen */
+    .hero-visual {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .decor-circle {
+        width: 85px;
+        height: 85px;
+    }
+
+    .decor-star {
+        font-size: 55px;
+    }
+
+    .decor-label {
+        right: 0;
+        bottom: 10%;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    /* Prevent other sections from overlapping */
+    #skills.section,
+    #softskills.section {
+        top: 0;
+        left: 0;
+        margin-top: 25px;
+    }
+}
+
 
 
 
