@@ -691,5 +691,71 @@ html {
 }
 
 
+/* MOBILE AND TABLET LAYOUT FIX */
+@media (max-width: 768px) {
+
+    #about.section,
+    #skills.section,
+    #softskills.section {
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 40px 6%;
+    }
+
+    #about h2,
+    #skills h2,
+    #softskills h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+
+    #about p,
+    #softskills p {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .decor-circle {
+        width: 85px;
+        height: 85px;
+    }
+
+    .decor-star {
+        font-size: 55px;
+    }
+
+    .decor-label {
+        right: 0;
+        bottom: 10%;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .skill-card {
+        min-width: 0;
+        padding: 18px 10px;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+
 
 
